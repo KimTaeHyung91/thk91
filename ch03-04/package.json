@@ -1,0 +1,22 @@
+{
+  "name": "ch03-04",
+  "version": "1.0.0",
+  "description": "chapter 03 ==========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "socket.io": "^2.2.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.9.0"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {}
+}
