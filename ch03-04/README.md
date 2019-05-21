@@ -55,6 +55,7 @@ typeof 키워드를 통해서 알 수 있음.
 
 chapter 04
 ==========
+Nodejs API : https://nodejs.org/api
 
 주소 문자열과 요청 파라미터 다루기
 ----
@@ -118,9 +119,15 @@ flag
 <li>'a+' : 읽기 + 쓰기 파일이 없으면 만들어지고, 이전내용에 새로운 내용이 추가.</li>
 </ul>
 
-스트림단위로 파일 읽고 쓰기<br>
+<h4>스트림단위로 파일 읽고 쓰기</h4>
 스트림은 전달되는 통로를 얘기함 ( 이전에는 data 단위로 읽고, 쓰기 )
 <ul>
 <li>createReadStream(path,[option])</li>
 <li>createWriteStream(path,[option])</li>
+</ul>
+
+<h4>디렉토리 생성</h4>
+<ul>
+<li>mkdir(path,option,callback) : 디렉토리 생성</li>
+<li>rmdir(path,callback) : 디렉토리 삭제</li>
 </ul>
