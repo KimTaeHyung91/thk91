@@ -66,19 +66,19 @@ ex) https://www.test.com?name=kim&age=29 <br>
 <li>queryString : name=kim&age=29</li>
 </ul>
 
-####주소문자열을 URL 객체로 변환하기
+<h4>주소문자열을 URL 객체로 변환하기</h4>
 parse() : 주소 문자열을 URL 객체로 파싱<br>
 format() : URL 객체를 주소 문자열로 파싱.
-####요청 파라미터 구분하기
+<h4>요청 파라미터 구분하기</h4>
 parse() : 요청 파라미터 문자열을 요청 파라미터 객체로 파싱<br>
 stringify() : 요청 파라미터 객체를 문자열로 파싱.
-####이벤트 이해하기
+<h4>이벤트 이해하기</h4>
 Node 는 대부분 이벤트 기반으로 동작. 비동기로 처리하기위해서 이벤트를 전달. 혹 이벤트로 알림 메세지를 보내는것과 동일.<br>
 이 부분을 도와주는 것이 EventEmitter 이다.<br>
 1.이벤트 리스너를 구현하는 객체는 EventEmitter 를 상속받는다.<br>
 2.상속을 구현한 객체는 on()으로 리스너를 등록하고, emit() 을 통해 전달한다.
 
-#####EventEmiiter 주요 메소드
+<h4>EventEmiiter 주요 메소드</h4>
 <ul>
 <li>on(event,listener) : 지정한 이벤트를 추가</li>
 <li>once(event,listener) : 지정한 이벤트를 추가하지만 한번 실행 후 제거</li>
@@ -87,7 +87,7 @@ Node 는 대부분 이벤트 기반으로 동작. 비동기로 처리하기위�
 process 객체를 통해서 이벤트를 주고 받았지만, 같은 이름의 이벤트가 충돌나는 경우가 있으므로 별도의 모듈을 제작해서 사용하기를 권장.<br>
 이때 EventEmitter 객체를 상속받아 사용. 객체는 prototype을 사용하여 전달받은 이벤트의 로직을 세우고, 모듈을 호출하는 쪽에서 이벤트를 전달한다.<br>
 
-####파일다루기
+<h4>파일다루기</h4>
 Node의 파일 시스템은 파일을 다루는것과 디렉토리를 다루는것으로 나뉨. 동기식 IO 는 파일을 다 읽을때까지 대기 반면에 비동기식 IO 는 요청만 하고 다른 작업을 병행 이후 파일 작업이 다 끝나면 이벤트로 받아서 처리.<br>
 동기식IO는 Synce 단어가 붙음.<br>
 
@@ -108,7 +108,7 @@ fs 모듈 메소드<br>
 <li>write(fd,buffer,offset,length,position,callback) : 지정한 부분에 데이터를 쓰기</li>
 <li>close(fd,callback) : 파일 닫기</li>
 </ul>
-
+※ fd : file discriptor > 0번 : 표준 입력, 1번 : 표준 출력, 2번 : 표준 에러 이므로 실제 파일을 생성하면 3번부터 배정받게됨.<br><br> 
 
 flag
 <ul>
